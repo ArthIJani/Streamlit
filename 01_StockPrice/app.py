@@ -3,6 +3,8 @@ import streamlit as st
 from datetime import datetime, timedelta
 import requests
 
+st.set_page_config(page_title="GetStockPrice", page_icon="increase.png", layout="wide")
+
 # Function to fetch current stock price
 def get_current_price(tickerSymbol):
     tickerData = yf.Ticker(tickerSymbol)
